@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Duck Form</title>
+</head>
+<body>
+    <main class="background">
+        <div class="box">
+            <form class="form" action="">
+                <label class="input-label" for="name">Full name</label>
+                <input class="input-field" type="text" name="name" id="name" minlength="2" required autofocus>
+                <label class="input-label" for="email">Email</label>
+                <input class="input-field input-field--short" type="email" name="email" id="email" placeholder="Your Email" required >
+                <label class="input-label" for="subject">Message regarding</label>
+                <select class="input-field select input-field--short" name="subject" id="subject">
+                    <option class="option--hidden"></option>
+                    <option class="select-option" value="ducks">Ducks</option>
+                    <option class="select-option" value="html forms">HTML Forms</option>
+                    <option class="select-option" value="other">Other</option>
+                </select>
+                <label class="input-label" for="message">Message</label>
+                <input class="input-field" type="text" name="message" id="message" placeholder="Your Message" maxlength="100" required>
+                <div class="container">
+                    <button class="button" type="button">Send message</button>
+                </div>
+            </form>
+            <img class="duck" src="images/duck.png" alt="yellow rubber duck">
+        </div>
+    </main>
+</body>
+</html>
